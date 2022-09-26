@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready text-sm lg:text-base"
+  style="--bg: #faf6f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Google Summer of Code 2022 @ incf - Hi there, Welcome</title>
+
+  
+  <meta name="theme-color" />
+  
+  <meta name="description" content="Digital Microsphere Contents:  Project Summary Stages of the project  Image Cropping and Processing Generating the point cloud and 3d mesh Projecting the embryo images onto the generated mesh   Installing Instructions User Guide  1. Project Summary: In some organisms like axolotl, the surface of the embryo is transparent and thus allowing us to see the embryogenetic events taking place before the neural tube closure. Therefore, acquiring images of the outside of early stage developing embryos could give us many insights." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://example.org/main.min.css" />
+
+  
+
+  
+  
+  
+    
+  
+  <link
+    rel="preload"
+    as="image"
+    href="http://example.org/theme.png"
+  />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/91690484?v=4" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="http://example.org/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://example.org/github.svg" />
+  
+  <link rel="preload" as="image" href="http://example.org/instagram.svg" />
+  
+  <link rel="preload" as="image" href="http://example.org/rss.svg" />
+  
+
+  
+  <link rel="icon" href="http://example.org/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.89.2" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Google Summer of Code 2022 @ incf" />
+<meta property="og:description" content="Digital Microsphere Contents:  Project Summary Stages of the project  Image Cropping and Processing Generating the point cloud and 3d mesh Projecting the embryo images onto the generated mesh   Installing Instructions User Guide  1. Project Summary: In some organisms like axolotl, the surface of the embryo is transparent and thus allowing us to see the embryogenetic events taking place before the neural tube closure. Therefore, acquiring images of the outside of early stage developing embryos could give us many insights." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/gsoc/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-26T23:26:45+05:30" />
+<meta property="article:modified_time" content="2022-09-26T23:26:45+05:30" />
+
+
+  
+  <meta itemprop="name" content="Google Summer of Code 2022 @ incf">
+<meta itemprop="description" content="Digital Microsphere Contents:  Project Summary Stages of the project  Image Cropping and Processing Generating the point cloud and 3d mesh Projecting the embryo images onto the generated mesh   Installing Instructions User Guide  1. Project Summary: In some organisms like axolotl, the surface of the embryo is transparent and thus allowing us to see the embryogenetic events taking place before the neural tube closure. Therefore, acquiring images of the outside of early stage developing embryos could give us many insights."><meta itemprop="datePublished" content="2022-09-26T23:26:45+05:30" />
+<meta itemprop="dateModified" content="2022-09-26T23:26:45+05:30" />
+<meta itemprop="wordCount" content="444">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google Summer of Code 2022 @ incf"/>
+<meta name="twitter:description" content="Digital Microsphere Contents:  Project Summary Stages of the project  Image Cropping and Processing Generating the point cloud and 3d mesh Projecting the embryo images onto the generated mesh   Installing Instructions User Guide  1. Project Summary: In some organisms like axolotl, the surface of the embryo is transparent and thus allowing us to see the embryogenetic events taking place before the neural tube closure. Therefore, acquiring images of the outside of early stage developing embryos could give us many insights."/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a class="-translate-x-[1px] -translate-y-0.5 text-3xl font-bold" href="http://example.org/"
+      >Hi there, Welcome</a
+    >
+    <a
+      class="btn-dark ml-6 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+    ></a>
+  </div>
+
+  <a
+    class="btn-menu relative z-50 -mr-8 flex h-[5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+  ></a>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `"#faf6f1"`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:mt-0 lg:ml-12 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href=" https://twitter.com/HarikrishnaPi10 "
+        target="_blank"
+      ></a>
+      
+      <a
+        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href=" https://github.com/Harikrishna-AL "
+        target="_blank"
+      ></a>
+      
+      <a
+        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./instagram.svg)"
+        href=" https://instagram.com/YOUR_INSTAGRAM_ID "
+        target="_blank"
+      ></a>
+      
+      <a
+        class="h-8 w-8 [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href=" http://example.org/index.xml "
+        target="_blank"
+      ></a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-10rem)] max-w-3xl px-8 pt-20 pb-32 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-20">
+    <h1 class="!my-0 pb-2.5">Google Summer of Code 2022 @ incf</h1>
+
+    
+    <div class="text-sm opacity-60">
+      
+      <time>Sep 26, 2022</time>
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h1 id="digital-microsphere">Digital Microsphere</h1>
+<h3 id="contents">Contents:</h3>
+<ul>
+<li><a href="#summary">Project Summary</a></li>
+<li><a href="#stages">Stages of the project</a>
+<ul>
+<li><a href="#image">Image Cropping and Processing</a></li>
+<li><a href="#mesh">Generating the point cloud and 3d mesh</a></li>
+<li><a href="#projecting">Projecting the embryo images onto the generated mesh</a></li>
+</ul>
+</li>
+<li><a href="#instructions">Installing Instructions</a></li>
+<li><a href="#user">User Guide</a></li>
+</ul>
+<h3 id="h3-idsummary1-project-summaryh3"><!-- raw HTML omitted -->1. Project Summary:<!-- raw HTML omitted --></h3>
+<p>In some organisms like axolotl, the surface of the embryo is transparent and thus allowing us to see the embryogenetic events taking place before the neural tube closure. Therefore, acquiring images of the outside of early stage developing embryos could give us many insights. Hence, aim of this project is to build a computational tool that allows us to visualize 4D data derived from the surface of an Axolotl embryo using a special microscope called Digital Microsphere. That is, a computational tool which will display a sphere on which the images of the embryo from different angles will be mapped creating a 3D model.</p>
+<h3 id="h3-idstages2-stages-of-the-projecth3"><!-- raw HTML omitted -->2. Stages of the Project:<!-- raw HTML omitted --></h3>
+<ul>
+<li>
+<h4 id="h4-idimagestage-1-image-cropping-and-processingh4"><!-- raw HTML omitted -->Stage #1: Image Cropping and Processing<!-- raw HTML omitted --></h4>
+<p>In this stage, the main focus is to crop the images to get the required portion and do some image processing on it. The python file retrieves the outline of the embryo and then uses it to find out the radius of the embryo in the x,y and z directions respectively.</p>
+</li>
+<li>
+<h4 id="h4-idmeshstage-2-generating-the-point-cloud-and-the-3d-meshh4"><!-- raw HTML omitted -->Stage #2: Generating the Point Cloud and the 3D mesh<!-- raw HTML omitted --></h4>
+<p>The python script takes three values of the radius of the embryo and using them it calculates all the 3d coordinates and then stores it in a <strong><em>.ply</em></strong> file to get the point cloud.
+Then, it takes the <strong><em>embryo.ply</em></strong> file and creates its mesh using the <strong><em>open3d</em></strong> library of python.</p>
+<p><img src="https://user-images.githubusercontent.com/91690484/182136823-4bd264e7-66b7-4176-976a-531f63d6c2da.png" alt="image"></p>
+</li>
+<li>
+<h4 id="h4-idprojectingstage-3-projecting-the-embryo-images-onto-the-generated-meshh4"><!-- raw HTML omitted -->Stage #3: Projecting the embryo images onto the generated mesh<!-- raw HTML omitted --></h4>
+<p>The mesh generated from the python code is then imported into blender to UV unwrap it in the required manner. Then the model is exported and then any image can be     chosen to map onto it according to its UV coordinates.
+These are the expected outputs that I showed in the proposal but I am still working on this part to improve it.
+<img src="https://user-images.githubusercontent.com/91690484/189043051-bfc45a66-f9d5-4e65-bd10-e516122481d5.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/91690484/182139982-bdb7d14b-00ed-4298-b5a3-079a6b28eabc.png" alt="image"></p>
+<p>This is what the projected image looks like on a ellipsoid.</p>
+</li>
+</ul>
+<h3 id="h3-idinstructions3-installing-instructionsh3"><!-- raw HTML omitted -->3. Installing Instructions<!-- raw HTML omitted --></h3>
+<ul>
+<li>Clone the repositry into your computer<!-- raw HTML omitted --></li>
+</ul>
+<pre tabindex="0"><code>git clone &lt;repo_link&gt;
+</code></pre><ul>
+<li>
+<!-- raw HTML omitted -->
+<p>To install electron modules into the project folder</p>
+<pre tabindex="0"><code>npm install electron
+</code></pre><p>To install virtualenv</p>
+<pre tabindex="0"><code>pip install virtualenv
+</code></pre><p>To create a virtual env type(You must have virtualenv installed first):</p>
+<pre tabindex="0"><code>virtualenv env
+</code></pre><p>To activate the virtual env (in Unix terminal)</p>
+<pre tabindex="0"><code>source env/bin/activate
+</code></pre><p>To install the required python packages in our environment</p>
+<pre tabindex="0"><code>pip install -r requirements.txt
+</code></pre><p>To start the application in elctron</p>
+<pre tabindex="0"><code>npm start
+</code></pre></li>
+<li>
+<p>The application will open after this command. You can see the embryo model in it. Now follow the user guide to use it.
+<img src="https://user-images.githubusercontent.com/91690484/188815554-f432c965-3092-4775-86ed-a2345d03e9dd.png" alt="image"></p>
+</li>
+</ul>
+<h3 id="h3-iduser4-user-guideh3"><!-- raw HTML omitted -->4. User Guide<!-- raw HTML omitted --></h3>
+<!-- raw HTML omitted -->
+<p><img src="https://user-images.githubusercontent.com/91690484/188880937-5bbbed57-ef1c-44e1-9c1e-8dca285fec1d.png" alt="img1">
+<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<p><img src="https://user-images.githubusercontent.com/91690484/188862650-a7e96be5-2242-4240-9145-926a88fb94b4.png" alt="image">
+<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<p><img src="https://user-images.githubusercontent.com/91690484/188885611-adf56d48-34f7-4c09-889f-10642f35d97a.png" alt="img1">
+<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+</section>
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <div id="disqus_thread"></div>
+  <script>
+    const disqusShortname = 'YOUR_DISQUS_SHORTNAME';
+    const script = document.createElement('script');
+    script.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
+    script.setAttribute('data-timestamp', +new Date());
+    document.head.appendChild(script);
+  </script>
+  
+</article>
+
+
+    </main>
+
+    <footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+  <div class="mr-auto">
+    &copy; 2022
+    <a class="link" href="http://example.org/">Hi there, Welcome</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank">Powered by Hugo️️</a
+  >️
+  <a class="link" href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank"
+    >▷ Paper 6</a
+  >
+</footer>
+
+  </body>
+</html>
