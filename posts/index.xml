@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hi there, Welcome</title>
-    <link>http://example.org/posts/</link>
+    <link>https://harikrishna-al.github.io/myBlog/posts/</link>
     <description>Recent content in Posts on Hi there, Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2022 23:26:45 +0530</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 23:26:45 +0530</lastBuildDate><atom:link href="https://harikrishna-al.github.io/myBlog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Summer of Code 2022 @ incf</title>
-      <link>http://example.org/posts/gsoc/</link>
+      <link>https://harikrishna-al.github.io/myBlog/posts/gsoc/</link>
       <pubDate>Mon, 26 Sep 2022 23:26:45 +0530</pubDate>
       
-      <guid>http://example.org/posts/gsoc/</guid>
+      <guid>https://harikrishna-al.github.io/myBlog/posts/gsoc/</guid>
       <description>Digital Microsphere Contents:  Project Summary Stages of the project  Image Cropping and Processing Generating the point cloud and 3d mesh Projecting the embryo images onto the generated mesh   Installing Instructions User Guide  1. Project Summary: In some organisms like axolotl, the surface of the embryo is transparent and thus allowing us to see the embryogenetic events taking place before the neural tube closure. Therefore, acquiring images of the outside of early stage developing embryos could give us many insights.</description>
     </item>
     
